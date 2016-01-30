@@ -1,0 +1,59 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
+}
+
+table {
+  width: 90%;
+  margin-left: 0%;
+  margin-right: 20%;
+  align:left;
+  align-items: left;
+  align-self:left;
+  align-content: left;
+  alignment-adjust: baseline;
+  alignment-baseline: baseline;
+  child-align: left;
+
+}
+
+h1 {
+  align:right;
+}
+
+.bottom {
+  align:center;
+  font-size: 2em;
+}
+
+tr {
+  align:left;
+}
+
+td {
+  align:left;
+}
+
+
+.btn-rounded {
+  width: 1em;
+  height: 1em;
+  padding:1em;
+  border-radius: 50%;
+}
+
+.btn-circle {
+  width: 5em;
+  height: 3em;
+  text-align: center;
+  border-radius: 45%;
+}
+
+.sum {
+  font-size: 2em;
+}
+
+th {
+  font-size: 150%;
+}

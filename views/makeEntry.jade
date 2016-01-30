@@ -1,0 +1,16 @@
+extends layout
+block content
+  h3 Shopping List detail
+  <br> 
+  input#symbol(type='text', placeholder='symbol')
+  <br>
+  input#shares(type='text', placeholder='shares')
+  <br>
+  input#description(type='text', placeholder='description')
+  <br>
+  h5 &nbsp;
+  <br>
+  a.btn.btn-success.btn-circle(href='/') Save
+  a.btn.btn-primary.btn-circle(href='/') Back
+block scripts
+  script(src='js/makeEntry.js')

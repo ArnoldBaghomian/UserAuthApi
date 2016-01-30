@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    h2 Change position
+    h3 symbol:
+    input#item(type='text', value='#{symbol}')
+    h3 price:
+    input#cost(type='text', value='#{price}')
+    h3 shares:
+    input#number(type='text', value='#{shares}')
+    h3 description:
+    input#description(type='text', value='#{description}')
+    <br>
+    h5 &nbsp;
+    <br>
+    a.btn.btn-success.saveIt.btn-circle(href='/') Save
+    a.btn.btn-primary.btn-circle(href='/') Back
+    input#id(type="hidden" name="id" value="#{id}")
+
+block scripts
+    script(src='js/changeEntry.js')
+
+
+
+
+
+
+
+
+
+ 
+
