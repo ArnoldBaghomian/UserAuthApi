@@ -38,8 +38,9 @@ router.post('/', function (req, res, next) {
 });
 
 router.get('/', function (req, res, next) {
+    console.log('req.user:', req.user);
 
-    portfolios.findOne({user:req.user}, function (err, positions) {
+    portfolios.findOne({user:req.user.uid}, function (err, positions) {
         res.send(positions);
     });
 });

@@ -100,6 +100,7 @@ function makeTable() {
 
 function showList() {
     $.get('/operations', function (data) {
+        console.log('data:', data);
         itemArray = data.positions;
         if ((itemArray.length===0) || (typeof itemArray[0] != 'undefined'))
             return;

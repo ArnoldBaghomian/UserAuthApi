@@ -2,6 +2,7 @@
 
 var mongoose = require('mongoose');
 var jwt = require('jwt-simple');
+var JWT_SECRET = process.env.JWT_SECRET;
 
 var portfolioSchema = new mongoose.Schema({
 	user:{type:String,require:true},
@@ -18,7 +19,7 @@ var portfolioSchema = new mongoose.Schema({
 
 portfolioSchema.methods.generateToken = function() {
 	var payload = {
-		uid: this.uid,
+		uid: this.user,
 		_id: this._id
 	};
 	var token = jwt.encode(payload, JWT_SECRET);
